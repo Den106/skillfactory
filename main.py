@@ -35,11 +35,11 @@ def ask():
         x, y = int(x), int(y)
         
         if field[x][y] != " ":
-            print(" Клетка занята! ")
+            print(" Клетка уже занята! ")
             continue
         
         if 0 > x or x > 2 or  0 > y or  y > 2 :
-            print(" Координаты вне диапазона! ")
+            print(" Координаты вне игрового поля! ")
             continue
         
         return x, y
