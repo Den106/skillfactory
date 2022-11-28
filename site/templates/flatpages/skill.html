@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    {% extends 'flatpages/default.html' %}
+ 
+    {% block title %}
+    <p><font size="10"  face="Arial"></font>{{ flatpage.title }}</font></p>
+    {% endblock title %}
+     
+    {% block content %}
+    <p><font size="10"  face="Arial"><h2>{{ flatpage.title }}</h2></font></p>
+        <hr>
+        <p><font size="10"  face="Arial"></font><h3>Наши контакты:</h3></font></p>
+        <p><font size="10"  face="Arial">{{ flatpage.content }}</font></p>
+        <p><font size="10"  face="Arial">{{ flatpage.content }}</font></p>
+    {% endblock content %}
+</html>
